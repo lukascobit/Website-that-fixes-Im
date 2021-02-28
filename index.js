@@ -7,14 +7,13 @@ function Translate(){
     
 
     console.log(newstring)
-
-    //newstring = document.getElementById("output").value = newstring.toString().replace(',',' ');
+    
     
 
     
     var arrayLength = 50
 
-    for (let i = 0; i < arrayLength;i++) {
+    for (let i = 0; i < arrayLength;i+=1) {
         
         if(newstring[i] == "Im"){
             newstring[i] = "I am"
@@ -32,10 +31,27 @@ function Translate(){
             newstring[i] = "Who is"
 
         }
+        else if (newstring[i] == "Its"){
+            newstring[i] = "It is"
+
+        }
+        else if (newstring[i] == "Whats"){
+            newstring[i] = "What is"
+
+        }
+        else if (newstring[i] == "kinda"){
+            newstring[i] = "kind of"
+
+        }
+        else if (newstring[i] == "dont"){
+            newstring[i] = "do not"
+
+        }
         else{
             newstring[i]
         
         }
+        
         newstring = document.getElementById("output").value = newstring.toString().replace(',',' ');
 
         
